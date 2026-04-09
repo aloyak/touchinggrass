@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  background: #f8fafc;
+}
+
+.hero-pixelart {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;
+  backface-visibility: hidden;
+}
+
+.hero-hc-flag {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  z-index: 15;
+  width: min(32vw, 240px);
+  max-width: 52vw;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  transform: translateX(-10%);
+  animation: flagEnter 1000ms cubic-bezier(0.2, 0.85, 0.2, 1) both;
+}
+
+@keyframes handFlagEnter {
+  from {
+    opacity: 0;
+    transform: translateX(-115%) translateY(8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-6%) translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-hc-flag {
+    bottom: 8%;
+    width: min(44vw, 220px);
+    transform: translateX(-14%);
+  }
+}
+
+@keyframes flagEnter {
+  from {
+    opacity: 0;
+    transform: translateX(-22%) translateY(8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-10%) translateY(0) scale(1);
+  }
+}

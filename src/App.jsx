@@ -24,15 +24,18 @@ export default function App() {
           className="hero-hc-flag transition-transform duration-300 hover:scale-105 hover:rotate-2"
         />
 
-        <div className="relative z-10 mx-auto flex h-full w-full max-w-5xl items-center justify-center px-6 py-8">
+        <div className="relative z-10 mx-auto flex h-full w-full max-w-5xl items-center justify-center px-6 py-8 -translate-y-10">
           <div className="w-full max-w-2xl rounded-3xl bg-emerald-100/30 p-8 text-center text-emerald-950 shadow-2xl backdrop-blur-sm md:p-12">
             <h1 className="text-4xl font-bold leading-tight sm:text-5xl">Touching Grass</h1>
             <p className="mx-auto mt-4 max-w-xl text-lg font-bold text-emerald-900 sm:text-xl">
               Build something meant to be used outdoors!
             </p>
             <p className="mx-auto mt-4 max-w-xl text-md text-emerald-900 sm:text-xl">
-              Jun 15 2026 - Jul 15 2026**
+              Jun 15 2026 - Jul 15 2026
             </p>
+            <button className="mt-6 rounded-full bg-emerald-500 px-6 py-3 font-bold text-white shadow-lg hover:bg-emerald-600">
+              Join Now!
+            </button>
           </div>
         </div>
 
@@ -58,7 +61,7 @@ export default function App() {
         <div className="pointer-events-none absolute inset-0 z-[8] bg-gradient-to-r from-slate-950/40 via-slate-900/20 to-transparent" />
       </section>
 
-      <section className="bg-[#1F3025] px-6 py-14 text-emerald-950">
+      <section className="bg-[#99AD7A] px-6 py-14 text-emerald-950">
         <div className="mx-auto w-full max-w-6xl rounded-2xl bg-white/80 p-8">
           <h2 className="text-3xl font-extrabold">Project Showcase!</h2>
           <p className="mt-4 max-w-xl font-bold text-emerald-900">
@@ -195,7 +198,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className="bg-[#1F3025] px-6 py-14 text-emerald-950">
+      <section className="bg-[#4FA760] px-6 py-14 text-emerald-950">
         <div className="mx-auto w-full max-w-4xl rounded-2xl bg-white/90 p-8 shadow-sm">
           <h2 className="text-3xl font-extrabold">FAQ</h2>
 
@@ -226,6 +229,9 @@ export default function App() {
           </div>
         </div>
       </section>
+      <footer className="bg-[#4FA760] px-6 py-8 text-center text-sm text-white">
+        <p>&copy; 2026 No rights reserved!</p>
+      </footer>
     </main>
   )
 }
